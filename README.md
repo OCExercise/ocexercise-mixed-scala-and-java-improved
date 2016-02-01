@@ -6,14 +6,14 @@ Print the name of a Person and a Computer he owns.  Demonstrates bidirectional r
 
 ### Gradle
 ```
-$ gradle clean bootRun      # optional -PstartClass="org.opencorrelate.exercise.jvm.JavaApplication"
+$ gradle clean bootRun      # optional -PstartClass="JavaApplication"
 
 # Observe output
 ```
 
 ### Maven
 ```
-$ mvn clean spring-boot:run     # optional -Dstart-class="org.opencorrelate.exercise.jvm.JavaApplication"
+$ mvn clean spring-boot:run     # optional -Dstart-class="JavaApplication"
 
 # Observe output
 ```

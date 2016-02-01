@@ -9,9 +9,10 @@
         <properties>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
             <java.version>1.8</java.version>
-            <scala.version>2.10.6</scala.version>
-            <scala.version.tools>2.10</scala.version.tools>
-            <start-class>org.opencorrelate.exercise.jvm.ScalaApplication</start-class>
+            <scala.version>2.11.7</scala.version>
+            <scala.version.tools>2.11</scala.version.tools>
+            <start-class>ScalaApplication</start-class>
+            <start-class-fqpn>org.opencorrelate.exercise.jvm.${start-class}</start-class-fqpn>
         </properties>
 
         <build>
@@ -92,7 +93,7 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <configuration>
-                        <mainClass>${start-class}</mainClass>
+                        <mainClass>${start-class-fqpn}</mainClass>
                     </configuration>
                     <executions>
                         <execution>

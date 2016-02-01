@@ -27,11 +27,12 @@ jar {
 
 springBoot {
 
-    mainClass = startClass
+    mainClass = "org.opencorrelate.exercise.jvm.$startClass"
 }
 
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -39,7 +40,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile 'org.scala-lang:scala-library:2.10.6'
+    compile 'org.scala-lang:scala-library:2.11.7'
     
     
     // // Basic libraries
@@ -87,7 +88,7 @@ dependencies {
     }
     testCompile 'org.hamcrest:hamcrest-library:1.2.1'
 
-    testCompile("org.scalatest:scalatest_2.10:2+")
+    testCompile("org.scalatest:scalatest_2.11:2+")
 }
 
 task wrapper(type: Wrapper) {
